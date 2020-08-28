@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.AspNet.OutputCache.OutputCacheModuleAsync</id>
+    <version>1.0.2</version>
+    <title>Microsoft ASP.NET OutputCache Async Module</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</licenseUrl>
+    <projectUrl>http://www.asp.net/</projectUrl>
+    <iconUrl>https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.outputcache.outputcachemoduleasync/1.0.2/icon</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Async version OutputCache module</description>
+    <summary>Async version OutputCache module</summary>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <language>en-US</language>
+    <tags>ASP.NET Async OutputCache Module</tags>
+  </metadata>
+</package>

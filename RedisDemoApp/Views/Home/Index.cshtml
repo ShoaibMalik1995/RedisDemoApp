@@ -1,0 +1,70 @@
+﻿@using RedisDemoApp.Models;
+
+@{
+    ViewBag.Title = "Redis Cache";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+@*<h2>Redis Cache</h2>
+<br /><br />*@
+
+@*<form method="post">
+    Command Execute &nbsp;:
+    <input name="txtCommand" type="text" />
+    <br />
+    Key &nbsp;:
+    <input name="txtKey" type="text" />
+    &nbsp; &nbsp;
+    Key Value &nbsp;:
+    <textarea name="txtKeyValue"></textarea>
+    <br />
+    GetKeyValue &nbsp;:
+    <input name="txtGetKey" type="text" />
+    <br /><br />
+    Result &nbsp; @ViewBag.Result
+
+    <input value="submit" type="submit" />
+</form>*@
+
+<div class="container">
+    <h2>Redis Cache</h2>
+    <form method="post">
+        <div class="form-group">
+            <label for="lblcommand">Command Execute:</label>
+            <input type="text" class="form-control" id="txtCommand" placeholder="Enter command" name="txtCommand">
+        </div>
+        <div class="form-group">
+            <label for="lblKey">Key:</label>
+            <input type="text" class="form-control" id="txtKey" placeholder="Enter Key" name="txtKey">
+            <label for="lblKeyVal">Key Value:</label>
+            <textarea class="form-control" id="txtKeyValue" placeholder="Enter Key Value" name="txtKeyValue"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="lblGetKeyVal">Get Key Value:</label>
+            <input type="text" class="form-control" id="txtGetKey" placeholder="Enter a key to Get Value" name="txtGetKey">
+        </div>
+        <div class="form-group">
+            <label for="lblResult">
+                Result Value: @ViewBag.Result
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="lblResult" style="font-size:medium">
+                Redis Data DropDown:
+            </label>
+            @if(ViewData["MySkills"] != null)
+            {
+                @Html.DropDownList("MySkills", (IEnumerable<SelectListItem>)ViewBag.MySkills, new { style = "width: 100px; padding: 6px; border-radius: 20px;"})
+            }
+            
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
