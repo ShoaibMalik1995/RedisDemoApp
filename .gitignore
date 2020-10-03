@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/RedisDemoApp/bin
+/RedisDemoApp/obj/Debug
+/RedisDemoApp/obj/Release
